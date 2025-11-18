@@ -21,7 +21,6 @@ const baeHeaderLinks: NavLink[] = [
 export const BAE_THEME_CONFIG: ThemeConfig = {
   name: 'BAE',
   displayName: 'BAE Default Theme',
-  isDefault: true,
   assets: {
     logoUrl: 'assets/themes/bae/bae-logo.svg',
     jumboBgUrl: 'assets/themes/bae/jumboBackground.png',

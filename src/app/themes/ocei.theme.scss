@@ -1,0 +1,14 @@
+body.theme-ocei {
+  /* Define primary and secondary colors for the Galaxy theme. */
+  /* These variables will be used by TailwindCSS and custom components. */
+  
+  /* Example HEX: #8A2BE2 */
+  --theme-primary-50: 69 208 196;
+  /* Example HEX: #4B0082 */
+  --theme-primary-100: 69 208 196;
+
+  /* Example HEX: #E6E6FA */
+  --theme-secondary-50: 255 255 255;
+  /* Example HEX: #2C004C */
+  --theme-secondary-100: 255 255 255;
+}
