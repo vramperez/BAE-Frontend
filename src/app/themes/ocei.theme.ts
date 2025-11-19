@@ -4,17 +4,21 @@ import { NavLink, ThemeConfig } from './theme.interfaces';
 const oceiHeaderLinks: NavLink[] = [
  {
     label: 'HEADER._home', // Translation key
-    url: '/',
+    url: '/dashboard',
     isRouterLink: true
  },
- {
-    label: 'HEADER._starmaps',
-    id: 'starmapsDropdown',
+  {
+    label: 'HEADER._browse',
+    id: 'searchDropdown', // ID para el toggle de Flowbite
     children: [
-        { label: 'HEADER._browse_maps', url: '/search', isRouterLink: true },
-        { label: 'HEADER._about_maps', url: '/about-starmaps', isRouterLink: true }
+      { label: 'HEADER._services', url: '/search', isRouterLink: true },
+      { label: 'HEADER._catalogs', url: '/catalogues', isRouterLink: true }
     ]
- }
+  }
+];
+
+const oceiFooterLinks: NavLink[] = [
+
 ];
 
 // Export the main theme configuration object
@@ -29,7 +33,10 @@ export const OCEI_THEME_CONFIG: ThemeConfig = {
     },
     links: {
         headerLinks: oceiHeaderLinks,
-        // footerLinks can be defined similarly
+        footerLinks: oceiFooterLinks,
+
+        linkedin: 'https://www.linkedin.com/company/o-cei-horizon',
+        youtube: 'https://www.youtube.com/@o-cei'
     },
     dashboard: {
         showFeaturedOfferings: true,
