@@ -39,7 +39,7 @@
 
                @if(!addComment){
                     <div class="justify-start">
-                        <h5 class="font-semibold tracking-tight text-lg text-primary-100 dark:text-primary-50">{{ 'FEEDBACK._tap' | translate }}</h5>
+                        <h5 class="font-semibold tracking-tight text-lg text-secondary-100 dark:text-secondary-900">{{ 'FEEDBACK._tap' | translate }}</h5>
     
                     <div class="flex items-center">
                     @for(star of [1, 2, 3, 4, 5];track star;){
@@ -62,7 +62,7 @@
                     </div>
                 }@else{
                     <div class="justify-start">
-                        <h5 class="font-semibold tracking-tight text-lg text-primary-100 dark:text-primary-50">{{ 'FEEDBACK._write' | translate }}</h5>
+                        <h5 class="font-semibold tracking-tight text-lg text-secondary-100 dark:text-secondary-900">{{ 'FEEDBACK._write' | translate }}</h5>
     
                     <div class="flex items-center">
                         <textarea id="message" rows="4" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" ></textarea>

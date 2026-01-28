@@ -13,7 +13,7 @@
   </div>
 
   <div class="flex-1 h-full bg-cover bg-right-bottom bg-opacity-25 bg-blend-multiply rounded-lg" [style.background-image]="'url(' + currentTheme?.assets?.cardDefaultBgUrl + ')'">
-    <div class="flex-1 h-full px-5 py-5 bg-secondary-50/95 dark:bg-tertiary-100/95 rounded-b-lg">
+    <div class="flex-1 h-full px-5 py-5 bg-secondary-50/80 dark:bg-tertiary-100/95 rounded-b-lg">
       <div class="flex items-center flex-wrap overflow-y-hidden overflow-x-hidden align-middle">
         <!--<a class="text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded-md mb-2 mr-2"
         [ngClass]="complianceLevel == 'NL' ? 'bg-red-200 text-red-700' : complianceLevel == 'BL' ? 'bg-orange-200 text-orange-700' : complianceLevel == 'P' ? 'bg-yellow-200 text-yellow-700' : 'bg-green-200 text-green-700'">
@@ -74,8 +74,8 @@
 
       <div class="flex sticky top-[100vh] items-center justify-center align-items-bottom rounded-lg mt-4">
 
-        <button (click)="toggleDetailsModal();$event.stopPropagation();"  type="button" class="flex items-center align-items-bottom text-white bg-primary-100 hover:bg-primary-50 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-100 dark:hover:bg-primary-50 dark:focus:ring-primary-100 mr-1">
-          <svg class="w-[18px] h-[18px] text-white mr-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 14">
+        <button (click)="toggleDetailsModal();$event.stopPropagation();"  type="button" class="group flex items-center align-items-bottom text-white bg-primary-100 hover:bg-primary-50 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-100 dark:hover:bg-primary-50 dark:focus:ring-primary-100 mr-1">
+          <svg class="group-hover:text-white w-[18px] h-[18px] text-white mr-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 14">
             <g stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
               <path d="M10 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"/>
               <path d="M10 13c4.97 0 9-2.686 9-6s-4.03-6-9-6-9 2.686-9 6 4.03 6 9 6Z"/>

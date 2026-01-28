@@ -1,14 +1,94 @@
 body.theme-ocei {
-  /* Define primary and secondary colors for the Galaxy theme. */
-  /* These variables will be used by TailwindCSS and custom components. */
-  
-  /* Example HEX: #8A2BE2 */
-  --theme-primary-50: 76 199 212;
-  /* Example HEX: #4B0082 */
-  --theme-primary-100: 68 213 185;
 
-  /* Example HEX: #E6E6FA */
-  --theme-secondary-50: 255 255 255;
-  /* Example HEX: #2C004C */
-  --theme-secondary-100: 255 255 255;
+  --ocei-text-primary: #00d084;
+  --ocei-text-background-hover: #7bdcb5;
+  --ocei-text-secondary: #4AC5D9;
+  
+  /* Define primary and secondary colors for O-CEI theme */
+  /* Based on O-CEI project brand colors - Teal/Cyan, whites, greys and blacks */
+  
+  /* Primary colors - Teal/Cyan (azul verdoso) for main accent */
+  --theme-primary-50: 178 235 242;    /* Light cyan/teal */
+  --theme-primary-100: 0 150 136;     /* Main teal/cyan */
+
+  /* Secondary colors - Greys, whites and blacks for foundation */
+  --theme-secondary-50: #ffffff;  /* Very light grey/white */
+  --theme-secondary-100: 33 33 33;    /* Dark grey/black */
+  --theme-secondary-200: 25 25 25;    /* Darker grey/black */
+  --theme-secondary-300: 66 66 66;    /* Medium grey */
+  --theme-secondary-400: 117 117 117; /* Light grey */
+  --theme-secondary-500: 13 13 13;    /* Very dark grey/black */
+  
+  /* Tertiary colors - Teal accents */
+  --theme-tertiary-50: 38 50 56;      /* Dark teal/grey accent */
+  --theme-tertiary-100: 0 121 107;    /* Teal accent */
+
+  .text-white{
+      color: var(--ocei-text-primary);
+      &:hover {
+        color: white;
+      }
+  }
+
+  button.text-white:hover, a.text-white:hover{
+      color: white;
+      background-color: var(--ocei-text-background-hover);
+  }
+
+
+  .bg-primary-100 {
+    background-color: #F7FAFC;
+  }
+
+  .bg-primary-50 {
+    background-color: white;
+  }
+
+  .text-primary-100 {
+      color: var(--ocei-text-primary);
+  }
+
+  .text-primary-50 {
+      color: var(--ocei-text-primary);
+  }
+
+  .bg-gray-100 {
+    background-color: var(--ocei-text-secondary);
+  }
+
+  .text-secondary-50 {
+    color: white;
+  }
+
+  .bg-secondary-50\/80 {
+    background-color: rgb(255 255 255 / 80%);
+  }
+
+  .border-secondary-50 {
+    border-color: var(--ocei-text-background-hover);
+  }
+
+  .bg-secondary-50 {
+    background-color: #f2f2f2;
+  }
+
+  .hover\:bg-gray-100:hover {
+    background-color: #7bdcb5;
+  }
+
+  .bg-green-700 {
+    background-color: #f7fafc;
+  }
+
+  .bg-blue-700 {
+    background-color: #f7fafc;
+  }
+
+  .decoration-primary-100 {
+    text-decoration-color: var(--ocei-text-primary);
+  }
+
+  .bg-blue-300 {
+    background-color: #F7FAFC;
+  }
 }
