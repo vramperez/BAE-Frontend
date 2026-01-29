@@ -25,7 +25,7 @@ const oceiFooterLinks: NavLink[] = [
 export const OCEI_THEME_CONFIG: ThemeConfig = {
     name: 'Ocei', // This MUST match the name used in the SCSS class (theme-galaxy)
     displayName: 'OCEI Marketplace',
-    isDefault: true,
+    // isDefault: true,
     assets: {
         logoUrl: 'assets/themes/ocei/ocei-logo.png',
         jumboBgUrl: 'assets/themes/ocei/jumboBackground.png',
