@@ -19,6 +19,11 @@ export interface NavLink {
   children?: NavLink[];
 
   icon?: string; // Optional: icon next to the link
+  /**
+   * When true the link opens in the same browser tab even if it's external.
+   * By default external links open in a new tab (`target="_blank"`).
+   */
+  openInSameTab?: boolean;
 }
 
 export interface ThemeLinkConfig {

@@ -12,7 +12,8 @@ const baeHeaderLinks: NavLink[] = [
     id: 'searchDropdown', // ID para el toggle de Flowbite
     children: [
       { label: 'HEADER._services', url: '/search', isRouterLink: true },
-      { label: 'HEADER._catalogs', url: '/catalogues', isRouterLink: true }
+      { label: 'HEADER._catalogs', url: '/catalogues', isRouterLink: true },
+      { label: 'HEADER._blueprints', url: 'https://marketplace.pre.o-cei.eu/search/urn:ngsi-ld:product-offering:bd1bb611-0b9e-4e79-ba25-abf1240039e1', isRouterLink: false, openInSameTab: true }
     ]
   }
   ];

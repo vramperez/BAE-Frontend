@@ -273,7 +273,8 @@ export class ProductDetailsComponent implements OnInit {
     }
     if(this.prodSpec.resourceSpecification != undefined){
       for(let j=0; j < this.prodSpec.resourceSpecification.length; j++){
-        let res = this.api.getResourceSpec(this.prodSpec.resourceSpecification[j].id);
+        // make sure to await the promise so the array contains actual objects
+        let res = await this.api.getResourceSpec(this.prodSpec.resourceSpecification[j].id);
         this.resourceSpecs.push(res);
       }
     }

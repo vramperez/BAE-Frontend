@@ -100,7 +100,16 @@ export class CategoriesFilterComponent implements OnInit {
     initFlowbite();
   }
 
+  private normalizeName(cat:any) {
+    // override special-case category names coming from backend
+    if (cat && cat.name === 'Demo blueprints') {
+      cat.name = 'ALL';
+    }
+  }
+
   findChildren(parent:any,data:any[]){
+    // normalize parent before pushing
+    this.normalizeName(parent);
     let childs = data.filter((p => p.parentId === parent.id));
     parent["children"] = childs;
     if(parent.isRoot == true){
@@ -117,8 +126,12 @@ export class CategoriesFilterComponent implements OnInit {
 
   findChildrenByParent(parent:any){
     let childs: any[] = []
+    // normalize name as soon as we have the object
+    this.normalizeName(parent);
     this.api.getCategoriesByParentId(parent.id).then(c => {
       childs=c;
+      // also normalize children names before attaching
+      childs.forEach(ch => this.normalizeName(ch));
       parent["children"] = childs;
       if(parent.isRoot == true){
         this.categories.push(parent)
