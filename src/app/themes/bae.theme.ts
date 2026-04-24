@@ -23,7 +23,7 @@ export const BAE_THEME_CONFIG: ThemeConfig = {
   displayName: 'BAE Default Theme',
   isDefault: true,
   assets: {
-    logoUrl: 'assets/themes/bae/bae-logo.svg',
+    logoUrl: 'assets/themes/bae/deploytour-logo.svg',
     jumboBgUrl: 'assets/themes/bae/jumboBackground.png',
     cardDefaultBgUrl: 'assets/themes/bae/cardBackground.svg'
   },
