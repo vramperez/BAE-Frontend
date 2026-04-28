@@ -54,9 +54,6 @@ export class AppComponent implements OnInit {
 
   }
   ngOnInit(): void {
-    const providerThemeName = environment.providerThemeName;
-    this.themeService.initializeProviderTheme(providerThemeName);
-
     initFlowbite();
     if(!this.localStorage.getObject('selected_categories'))
       this.localStorage.setObject('selected_categories', []);
