@@ -204,7 +204,7 @@ import { OperatorRevenueSharingComponent } from "src/app/pages/admin/operator-re
     {
       provide: APP_INITIALIZER,
       useFactory: appConfigFactory,
-      deps: [AppInitService, MatomoInitializerService],
+      deps: [AppInitService, MatomoInitializerService, ThemeService],
       multi: true
     },
     {
